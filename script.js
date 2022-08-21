@@ -17,7 +17,7 @@ add.onclick = function () {
             values.push(e.value)
         })
 
-        const description = `<p><strong>Name:</strong> ${name}<br><strong>Email:</strong> ${email}<br><strong>Website Link:</strong> ${web}<br><strong>Address: </strong> ${addr}<br><strong>Gender:</strong> ${document.querySelector('input[type="radio"]:checked').value}
+        const description = `<p><strong>Name:</strong> ${name}<br><strong>Email:</strong> ${email}<br><strong>Website Link:</strong> <a href="${web}" class="link">Go To Link</a> <br><strong>Address: </strong> ${addr}<br><strong>Gender:</strong> ${document.querySelector('input[type="radio"]:checked').value}
         <br><strong>Skills:</strong> ${values.join(', ')}</p>
         `
         var newRow = t.insertRow(row)
